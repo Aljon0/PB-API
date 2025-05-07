@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // Enhanced CORS configuration
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'], 
+  origin: ['http://localhost:5173', 'http://127.0.0.1:5173', 'https://pb-api-phle.onrender.com', 'https://projectbaymax.onrender.com'], 
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
