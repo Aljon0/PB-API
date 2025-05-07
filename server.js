@@ -121,7 +121,6 @@ app.get('/api/nlm', async (req, res) => {
   }
 });
 
-// Add the missing /api/symptoms endpoint
 app.post('/api/symptoms', async (req, res) => {
   try {
     const { symptoms } = req.body;
@@ -129,8 +128,6 @@ app.post('/api/symptoms', async (req, res) => {
     // Log the request to help debug
     console.log("Received symptoms analysis request:", symptoms);
     
-    // This is a simplified symptom analyzer - in a real app you'd want a more robust solution
-    // or integration with a medical API
     const commonConditions = {
       "headache": ["Tension headache", "Migraine", "Dehydration", "Stress"],
       "fever": ["Common cold", "Flu", "Infection", "COVID-19"],
